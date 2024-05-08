@@ -1,26 +1,92 @@
-body {
-  background-color: white;
+@font-face {
+  font-family: "Raleway";
+  src: url(Resources/Raleway/static/Raleway-Medium.ttf);
+}
+@font-face {
+  font-family: "Raleway Two";
+  src: url(Resources/Raleway/static/Raleway-LightItalic.ttf);
 }
 
+@font-face {
+  font-family: "Raleway Three";
+  src: url(Resources/Raleway/static/Raleway-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Raleway Four";
+  src: url(Resources/Raleway/static/Raleway-Bold.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(255, 240, 245);
+}
+
+.navbar {
+  background: rgb(255, 182, 193);
+  font-family: "Raleway Four";
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.navdiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo a {
+  font-size: 35px;
+  font-weight: 600;
+  color: rgb(219, 112, 147);
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+}
+
+li a {
+  color: rgb(219, 112, 147);
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 25px;
+}
+
+.ai-text {
+  font-family: "Raleway Two";
+}
 .container {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: black;
 }
 .top-img {
-  display: inline-block;
-  margin-left: auto;
   object-fit: cover;
-  width: 715px;
-  height: 500px;
+  width: 65%;
+  height: 450px;
 }
 .top-text {
   background-color: black;
   margin-right: auto;
-  text-align: center;
+  text-align: left;
   color: white;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  width: 715px;
-  height: 500px;
+  font-family: "Raleway";
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  height: 450px;
 }
+
 .text-one {
 }
 .text-two-box-one {
