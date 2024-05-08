@@ -1,4 +1,25 @@
+body {
+  background-color: white;
+}
+
+.container {
+  display: flex;
+}
 .top-img {
+  display: inline-block;
+  margin-left: auto;
+  object-fit: cover;
+  width: 715px;
+  height: 500px;
+}
+.top-text {
+  background-color: black;
+  margin-right: auto;
+  text-align: center;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  width: 715px;
+  height: 500px;
 }
 .text-one {
 }
