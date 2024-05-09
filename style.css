@@ -151,12 +151,17 @@ li a:hover {
 .card-content .btn {
   display: inline-block;
   padding: 8px 16px;
-  background-color: rgb(238, 130, 238);
   text-decoration: none;
   border-radius: 5px;
   margin-top: 16px;
-  color: black;
-  font-family: "Raleway";
+  color: rgb(255, 0, 255);
+  font-family: "Raleway Four";
+}
+
+.card-content .btn:hover {
+  cursor: pointer;
+  transform: scale(1.07);
+  transition: all 0.4s ease;
 }
 
 .card:hover {
