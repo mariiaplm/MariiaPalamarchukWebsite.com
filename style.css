@@ -17,6 +17,21 @@
   src: url(Resources/Raleway/static/Raleway-Bold.ttf);
 }
 
+@font-face {
+  font-family: "Raleway Five";
+  src: url(Resources/Raleway/static/Raleway-Light.ttf);
+}
+
+@font-face {
+  font-family: "Raleway Six";
+  src: url(Resources/Raleway/static/Raleway-SemiBoldItalic.ttf);
+}
+
+@font-face {
+  font-family: "Raleway Seven";
+  src: url(Resources/Raleway/static/Raleway-SemiBold.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -41,12 +56,6 @@ body {
   justify-content: space-between;
 }
 
-.logo a {
-  font-size: 35px;
-  font-weight: 600;
-  color: rgb(219, 112, 147);
-}
-
 li {
   list-style: none;
   display: inline-block;
@@ -54,9 +63,21 @@ li {
 
 li a {
   color: rgb(219, 112, 147);
-  font-size: 18px;
+  font-size: 15px;
   font-weight: bold;
   margin-right: 25px;
+  font-family: "Raleway Seven";
+}
+
+li:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: all 1s ease;
+}
+
+li a:hover {
+  color: rgb(214, 82, 126);
+  cursor: pointer;
 }
 
 .ai-text {
@@ -91,16 +112,16 @@ li a {
 .card-container {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   margin-top: 100px;
 }
 
 .card {
   width: 300px;
-  background-color: aliceblue;
-  border-radius: 8px;
+  background-color: white;
+  border-radius: 40px;
   overflow: hidden;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2.5px 15px rgb(72, 72, 72);
   margin: 20px;
 }
 
@@ -114,22 +135,34 @@ li a {
 }
 
 .card-content h3 {
-  font-size: 28px;
+  font-size: 25px;
   margin-bottom: 8px;
+  font-family: "Raleway Four";
 }
 
 .card-content p {
   color: black;
   font-size: 15px;
   line-height: 1.3;
+  font-family: "Raleway Five";
+  letter-spacing: 0.02cm;
 }
 
 .card-content .btn {
   display: inline-block;
   padding: 8px 16px;
-  background-color: aquamarine;
+  background-color: rgb(238, 130, 238);
   text-decoration: none;
-  border-radius: 4px;
+  border-radius: 5px;
   margin-top: 16px;
-  color: white;
+  color: black;
+  font-family: "Raleway";
+}
+
+.card:hover {
+  background-color: rgb(250, 237, 246);
+  color: rgb(255, 0, 255);
+  cursor: pointer;
+  transform: scale(1.02);
+  transition: all 0.7s ease;
 }
