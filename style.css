@@ -44,7 +44,7 @@ body {
 }
 
 .navbar {
-  background: rgb(255, 182, 193);
+  background-color: rgb(255, 240, 245);
   font-family: "Raleway Four";
   padding-right: 15px;
   padding-left: 15px;
@@ -111,6 +111,18 @@ li a:hover {
 .text-one,
 .text-two {
   margin: 20px;
+}
+
+.subhead-one,
+.subhead-two {
+  font-family: "Raleway Four";
+  color: rgb(106, 38, 78);
+}
+
+.small-text-one,
+.small-text-two {
+  font-family: "Raleway Three";
+  color: rgb(200, 94, 139);
 }
 
 .main-content {
