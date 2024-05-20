@@ -42,17 +42,45 @@ body {
   background-color: rgb(255, 240, 245);
 }
 
-.navbar {
-  background-color: rgb(255, 240, 245);
+.navbar-two {
+  background-color: rgb(252, 220, 231);
   font-family: "Raleway Four";
   padding-right: 15px;
   padding-left: 15px;
 }
 
-.navdiv {
+.navdiv-two {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+}
+
+li a {
+  color: rgb(219, 112, 147);
+  font-size: 15px;
+  font-weight: bold;
+  margin-right: 25px;
+  font-family: "Raleway Seven";
+  text-decoration: none;
+}
+
+li:hover {
+  cursor: pointer;
+  transition: all 1s ease;
+}
+
+li a:hover {
+  color: rgb(214, 82, 126);
+  cursor: pointer;
+}
+
+.top-img {
+  margin-left: 40px;
 }
 
 .text-one {
