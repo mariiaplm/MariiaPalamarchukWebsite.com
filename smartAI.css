@@ -79,12 +79,19 @@ li a:hover {
   cursor: pointer;
 }
 
-.top-img {
-  margin-left: 40px;
+.text-image-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 50px;
+  margin-left: 20px;
 }
 
 .text-one {
-  margin: 20px;
+  margin-right: 20px;
+  flex: 1;
+  width: 50%;
+  font-size: 1.3em;
 }
 
 .subhead-one {
@@ -92,11 +99,17 @@ li a:hover {
   color: rgb(106, 38, 78);
 }
 .top-img {
-  object-fit: none;
-  width: 55%;
-  height: 400px;
+  width: 60%;
+  height: 100%;
   border-radius: 8px;
+  margin: 30px;
 }
+
+.top-img iframe {
+  width: 91%;
+  height: 350px;
+}
+
 .small-text-one {
   font-family: "Raleway Three";
   color: rgb(200, 94, 139);

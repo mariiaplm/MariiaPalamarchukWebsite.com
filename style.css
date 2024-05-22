@@ -105,12 +105,19 @@ li a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: left;
+  align-items: flex-start;
+  padding-left: 60px;
   height: 450px;
+  font-size: 1.25em;
 }
 
-.text-one,
-.text-two {
+.human-robots-text {
+  font-size: 1.5em;
+}
+
+.human-robots-text,
+.video-container {
+  flex: 1;
   margin: 20px;
 }
 
@@ -128,13 +135,21 @@ li a:hover {
 
 .main-content {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
+  align-items: flex-start;
   margin-top: 50px;
   margin-left: 20px;
 }
 
 .video-container {
-  margin-left: 65.5px;
+  width: 100%;
+  max-width: 900px;
+  margin: 20px auto;
+}
+
+.video-container iframe {
+  width: 91%;
+  height: 350px;
 }
 
 .card-container {
